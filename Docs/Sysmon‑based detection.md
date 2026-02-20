@@ -35,5 +35,7 @@ Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational" |
   } |
   Select-Object TimeCreated, Message
 
+  ```
+
 > [!NOTE]
 > This matches Sigma‑style “Remote PowerShell Session Host Process (WinRM)” detections.
