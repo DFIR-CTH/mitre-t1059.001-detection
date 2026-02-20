@@ -1,5 +1,6 @@
 # mitre-t1059.001-detection
 
+[Attacking Scenario of T1059.001]()
 
 Below is a step‑by‑step “from host to SIEM” playbook using:
 
