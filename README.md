@@ -29,3 +29,5 @@ Below is a step‑by‑step “from host to SIEM” playbook using:
 [5. Splunk searches](https://github.com/DFIR-CTH/mitre-t1059.001-detection/blob/main/Docs/Splunk%20detection%20engineering.md)
 
 [6. Detection rules (Sigma‑style / engineering ideas)](https://github.com/DFIR-CTH/mitre-t1059.001-detection/blob/main/Docs/Advanced%20detection%E2%80%91engineering.md)
+
+[7. MITRE ATT&CK Technique Mapping](Docs/MAPPING.md)
