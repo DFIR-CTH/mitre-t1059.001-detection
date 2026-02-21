@@ -8,7 +8,7 @@ Below is a step‑by‑step “from host to SIEM” playbook using:
 
 [2. Sysmon (1, 3, 7, 13, 22, etc.)](Docs/Sysmon‑based%20detection.md)
 
-[3. File system (Temp, Downloads, suspicious folders)]()
+[3. File system (Temp, Downloads, suspicious folders)](Docs/Suspicious%20file%20system%20locations.md)
 
 [4. Task Scheduler / schtasks]()
 
