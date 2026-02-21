@@ -43,11 +43,11 @@ The scenario is based on an attacker using **Evil‑WinRM** to obtain a remote P
 
 | Repo File / Section                                                                                     | Primary Techniques                                                                 |
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| `Docs/Attacking_Scenario.md`                                                                            | T1021.006, T1059.001                                                               |
-| `Docs/Windows Event Viewer (4688, PowerShell logs).md`                                                  | T1059.001, T1562.001                                                               |
-| `Docs/Sysmon‑based detection.md`                                                                        | T1059.001, T1021.006, T1053.005, T1562.001, T1071                                  |
-| `Docs/Suspicious file system locations.md`                                                              | T1059.001, T1053.005                                                               |
-| `Docs/Scheduled tasks detection.md`                                                                     | T1053.005, T1059.001                                                               |
-| `Docs/Splunk detection engineering.md`                                                                  | T1059.001, T1021.006, T1053.005, T1562.001, T1071                                  |
-| `Docs/Advanced detection‑engineering.md`                                                                | All of the above (execution, persistence, lateral movement, defense evasion, C2)   |
+| [Attacking_Scenario](Docs/Attacking_Scenario.md)                                                                            | T1021.006, T1059.001                                                               |
+| [Windows Event Viewer (4688, Powershell logs)](Docs/Windows Event Viewer (4688, PowerShell logs).md)                                                  | T1059.001, T1562.001                                                               |
+| [Sysmon-based detection](Docs/Sysmon‑based detection.md)                                                                        | T1059.001, T1021.006, T1053.005, T1562.001, T1071                                  |
+| [Suspicious file system locations](Docs/Suspicious file system locations.md)                                                              | T1059.001, T1053.005                                                               |
+| [Schedule tasks detection](Docs/Scheduled tasks detection.md)                                                                     | T1053.005, T1059.001                                                               |
+| [Splunk detection engineering](Docs/Splunk detection engineering.md)                                                                  | T1059.001, T1021.006, T1053.005, T1562.001, T1071                                  |
+| [Advanced detection-engineering](Docs/Advanced detection‑engineering.md)                                                                | All of the above (execution, persistence, lateral movement, defense evasion, C2)   |
 
