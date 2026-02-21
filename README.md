@@ -1,16 +1,16 @@
-# mitre-t1059.001-detection
+## MITRE-T1059.001-Detection 
 
 This repository focuses on scenario‑based detection of MITRE ATT&CK technique T1059.001 (PowerShell), built around a real‑world attack path where the attacker uses Evil‑WinRM as the initial access vector and then abuses PowerShell for execution, lateral movement, and persistence—while also interacting with interactive UI‑based applications such as WhatsApp from the remote terminal.
 
 Instead of generic “PowerShell is bad” rules, each detection is designed to mirror an observed attack scenario: WinRM → PowerShell session → T1059.001 behaviors → staging in Temp/AppData → scheduled tasks → UI‑based abuse. The detection engineering is not a copy‑paste of one public rule; it’s modeled after practical Evil‑WinRM workflows, emphasizing:
 
-    - Remote PowerShell sessions (wsmprovhost.exe → powershell.exe)
+- Remote PowerShell sessions (wsmprovhost.exe → powershell.exe)
 
-    - Encoded, obfuscated, and download‑cradle‑style commands
+- Encoded, obfuscated, and download‑cradle‑style commands
 
-    - Execution from user‑writable paths (Temp, AppData, Downloads)
+- Execution from user‑writable paths (Temp, AppData, Downloads)
 
-    - Scheduled‑task and persistence‑style follow‑up actions
+- Scheduled‑task and persistence‑style follow‑up actions
 
 For every scenario, the detection approach stays conceptually aligned with these patterns, slightly adapted per environment, instead of being an exact replica of any single rule.
 
