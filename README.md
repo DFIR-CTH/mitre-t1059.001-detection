@@ -14,4 +14,4 @@ Below is a step‑by‑step “from host to SIEM” playbook using:
 
 [5. Splunk searches](Docs/Splunk%20detection%20engineering.md)
 
-[6. Detection rules (Sigma‑style / engineering ideas)]()
+[6. Detection rules (Sigma‑style / engineering ideas)](Docs/Advanced%20detection‑engineering.md)
