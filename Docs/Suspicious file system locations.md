@@ -2,7 +2,7 @@
 
 [(i) Defender triage commands ]()
 
-# General Command
+**General Command**
 
 ```bash
 
@@ -11,7 +11,7 @@ Get-ChildItem "$env:TEMP" -Recurse -Include *.ps1,*.bat,*.vbs,*.js,*.cmd,*.exe
 ```
 
 
-# 24h recent scripts / binaries in Temp
+**24h recent scripts / binaries in Temp**
 
 ```bash
 
@@ -21,7 +21,7 @@ Get-ChildItem "$env:TEMP" -Recurse -Include *.ps1,*.bat,*.vbs,*.js,*.cmd,*.exe |
 
 ```
 
-# 24h recent tools in Downloads, AppData
+**24h recent tools in Downloads, AppData**
 
 ```bash
 
