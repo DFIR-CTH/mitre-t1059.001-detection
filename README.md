@@ -10,7 +10,7 @@ Below is a step‑by‑step “from host to SIEM” playbook using:
 
 [3. File system (Temp, Downloads, suspicious folders)](Docs/Suspicious%20file%20system%20locations.md)
 
-[4. Task Scheduler / schtasks]()
+[4. Task Scheduler / schtasks](Docs/Scheduled%20tasks%20detection.md)
 
 [5. Splunk searches]()
 
