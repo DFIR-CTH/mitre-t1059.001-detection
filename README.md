@@ -12,6 +12,6 @@ Below is a step‑by‑step “from host to SIEM” playbook using:
 
 [4. Task Scheduler / schtasks](Docs/Scheduled%20tasks%20detection.md)
 
-[5. Splunk searches]()
+[5. Splunk searches](Docs/Splunk%20detection%20engineering.md)
 
 [6. Detection rules (Sigma‑style / engineering ideas)]()
