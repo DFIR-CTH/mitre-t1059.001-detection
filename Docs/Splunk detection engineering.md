@@ -8,6 +8,8 @@ Assumptions:
 
   - Security: WinEventLog:Security
 
+  ---
+
   [(i) Detect remote PowerShell via WinRM ]():
 
   ```spl
@@ -72,7 +74,7 @@ EventCode=4104
 
 ```spl
 
-  index=endpoint sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational"
+index=endpoint sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational"
 EventCode=1 Image="*\\powershell.exe"
 (
  CommandLine="*\\AppData\\Local\\Temp\\*" OR
