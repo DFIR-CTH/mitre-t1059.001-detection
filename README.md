@@ -1,6 +1,18 @@
 # mitre-t1059.001-detection
 
-[Attacking Scenario of T1059.001](Docs/Attacking_Scenario.md)
+This repository focuses on scenario‑based detection of MITRE ATT&CK technique T1059.001 (PowerShell), built around a real‑world attack path where the attacker uses Evil‑WinRM as the initial access vector and then abuses PowerShell for execution, lateral movement, and persistence—while also interacting with interactive UI‑based applications such as WhatsApp from the remote terminal.
+
+Instead of generic “PowerShell is bad” rules, each detection is designed to mirror an observed attack scenario: WinRM → PowerShell session → T1059.001 behaviors → staging in Temp/AppData → scheduled tasks → UI‑based abuse. The detection engineering is not a copy‑paste of one public rule; it’s modeled after practical Evil‑WinRM workflows, emphasizing:
+
+Remote PowerShell sessions (wsmprovhost.exe → powershell.exe)
+
+Encoded, obfuscated, and download‑cradle‑style commands
+
+Execution from user‑writable paths (Temp, AppData, Downloads)
+
+Scheduled‑task and persistence‑style follow‑up actions
+
+For every scenario, the detection approach stays conceptually aligned with these patterns, slightly adapted per environment, instead of being an exact replica of any single rule.
 
 Below is a step‑by‑step “from host to SIEM” playbook using:
 
@@ -15,3 +27,5 @@ Below is a step‑by‑step “from host to SIEM” playbook using:
 [5. Splunk searches](Docs/Splunk%20detection%20engineering.md)
 
 [6. Detection rules (Sigma‑style / engineering ideas)](Docs/Advanced%20detection‑engineering.md)
+
+This repo is especially useful for defenders who want to build scenario‑aware, low‑false‑positive T1059.001 detection in environments where remote PowerShell (WinRM / Evil‑WinRM) is commonly used.
